@@ -13,14 +13,14 @@ local Section = Tab:AddSection({
 })
 
 Tab:AddButton({
-	Name = "autofarm crash need 100 money",
+	Name = "autofarm crash need 1000 money",
 	Callback = function()
       		print("button pressed")
       		while true do
 wait(1)
 local args = {
     [1] = "Bet",
-    [2] = "50",
+    [2] = "100,
     [3] = "1.02"
 }
 
@@ -47,3 +47,19 @@ end
   	end    
 })
 
+Tab:AddButton({
+	Name = "Button!",
+	Callback = function()
+      		print("button pressed")
+      		while true do
+wait(0.1)
+local args = {
+    [1] = "Bet",
+    [2] = "100",
+    [3] = "1.02"
+}
+
+game:GetService("ReplicatedStorage").Events.CrashAction:FireServer(unpack(args))
+end
+  	end    
+})
