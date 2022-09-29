@@ -48,7 +48,7 @@ end
 })
 
 Tab:AddButton({
-	Name = "Button!",
+	Name = "autofarm 100 money",
 	Callback = function()
       		print("button pressed")
       		while true do
@@ -64,4 +64,3 @@ end
   	end    
 })
 
-OrionLib:Init()
