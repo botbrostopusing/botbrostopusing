@@ -34,7 +34,7 @@ end
 Tab:AddButton({
 	Name = "autofarm crash 100 MONEY NEED",
 	Callback = function()
-      		print("button pressed")
+      	
 		 while true do
 wait(0.1)
 local args = {
