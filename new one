@@ -2,14 +2,6 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 
 local Window = OrionLib:MakeWindow({Name = "good one", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
-OrionLib:MakeNotification({
-	Name = "NEW SCRIPT",
-	Content = "you here for new script:DDDDD",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
-
-
 
 local Tab = Window:MakeTab({
 	Name = "Tab 1",
@@ -17,16 +9,17 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+
 local Section = Tab:AddSection({
 	Name = "Section"
 })
 
 
 Tab:AddButton({
-	Name = "AUTOFARM 1 MONEY NEED",
+	Name = "autofarm 1 money need",
 	Callback = function()
       		print("button pressed")
-      		 while true do
+		 while true do
 wait(0.1)
 local args = {
     [1] = "Bet",
@@ -39,10 +32,14 @@ end
   	end    
 })
 
+
+
+
+
 Tab:AddButton({
-	Name = "autofarm crash 100 MONEY NEED",
+	Name = "autofarm 100 money need",
 	Callback = function()
-      	
+      		print("button pressed")
 		 while true do
 wait(0.1)
 local args = {
@@ -57,11 +54,12 @@ end
 })
 
 
+
 Tab:AddButton({
 	Name = "autofarm 1000 money need",
 	Callback = function()
       		print("button pressed")
-      		 while true do
+		 while true do
 wait(0.1)
 local args = {
     [1] = "Bet",
@@ -73,8 +71,3 @@ game:GetService("ReplicatedStorage").Events.CrashAction:FireServer(unpack(args))
 end
   	end    
 })
-
-
-
-
-OrionLib:Init()
