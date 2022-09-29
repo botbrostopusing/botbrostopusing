@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Street Simulator here i not toxic ok", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local Tab = Window:MakeTab({
 	Name = "autofarm",
@@ -46,3 +46,31 @@ end
       		
   	end    
 })
+
+Tab:AddButton({
+	Name = "Button!",
+	Callback = function()
+      		print("button pressed")
+      		while true do
+wait(0.1)
+local args = {
+    [1] = "Bet",
+    [2] = "100",
+    [3] = "1.02"
+}
+
+game:GetService("ReplicatedStorage").Events.CrashAction:FireServer(unpack(args))
+end
+  	end    
+})
+
+
+Tab:AddColorpicker({
+	Name = "Colorpicker",
+	Default = Color3.fromRGB(255, 0, 0),
+	Callback = function(Value)
+		print(Value)
+	end	  
+}
+
+OrionLib:Init()
