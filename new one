@@ -3,6 +3,14 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 local Window = OrionLib:MakeWindow({Name = "good one", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 
+OrionLib:MakeNotification({
+	Name = "Title!",
+	Content = "Notification content... what will it say??",
+	Image = "http://www.roblox.com/asset/?id=10163868543",
+	Time = 5
+})
+
+
 local Tab = Window:MakeTab({
 	Name = "Tab 1",
 	Icon = "rbxassetid://4483345998",
@@ -73,9 +81,3 @@ end
 })
 
 
-OrionLib:MakeNotification({
-	Name = "Title!",
-	Content = "Notification content... what will it say??",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
