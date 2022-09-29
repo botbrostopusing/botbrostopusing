@@ -64,13 +64,4 @@ end
   	end    
 })
 
-
-Tab:AddColorpicker({
-	Name = "Colorpicker",
-	Default = Color3.fromRGB(255, 0, 0),
-	Callback = function(Value)
-		print(Value)
-	end	  
-}
-
 OrionLib:Init()
