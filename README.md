@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Street Simulator free script ", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local Tab = Window:MakeTab({
 	Name = "autofarm",
@@ -9,7 +9,7 @@ local Tab = Window:MakeTab({
 })
 
 local Section = Tab:AddSection({
-	Name = "autofarm crash paid more button"
+	Name = "autofarm crash"
 })
 
 Tab:AddButton({
@@ -49,7 +49,7 @@ end
 
 
 Tab:AddButton({
-	Name = "AutoFarm crash need 500 money",
+	Name = "AutoFarm 500",
 	Callback = function()
       		print("button pressed")
       		while true do
@@ -57,6 +57,25 @@ wait(1)
 local args = {
     [1] = "Bet",
     [2] = "250",
+    [3] = "1.02"
+}
+
+game:GetService("ReplicatedStorage").Events.CrashAction:FireServer(unpack(args))
+end
+      		
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "AutoFarm 1000",
+	Callback = function()
+      		print("button pressed")
+      		while true do
+wait(1.1)
+local args = {
+    [1] = "Bet",
+    [2] = "500",
     [3] = "1.02"
 }
 
