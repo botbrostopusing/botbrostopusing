@@ -53,7 +53,7 @@ Tab:AddButton({
 	Callback = function()
       		print("button pressed")
       		while true do
-wait(1)
+wait(2)
 local args = {
     [1] = "Bet",
     [2] = "250",
