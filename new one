@@ -68,9 +68,24 @@ local args = {
     [2] = "100",
     [3] = "1.02"
 }
+  	end    
+})
 
-game:GetService("ReplicatedStorage").Events.CrashAction:FireServer(unpack(args))
-end
+
+ 
+ Tab:AddButton({
+	Name = "autofarm need 10k money",
+	Callback = function()
+      		print("button pressed")
+				 while true do
+wait(2)
+local args = {
+    [1] = "Bet",
+    [2] = "1000",
+    [3] = "1.02"
+}
+  	end    
+}
   	end    
 })
 
