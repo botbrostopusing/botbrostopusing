@@ -102,3 +102,21 @@ game:GetService("ReplicatedStorage").Events.CrashAction:FireServer(unpack(args))
 end
   	end    
 })
+
+
+Tab:AddButton({
+	Name = "autofarm better its need 15 money",
+	Callback = function()
+      		print("button pressed")
+		 while true do
+wait(0.1)
+local args = {
+    [1] = "Bet",
+    [2] = "15",
+    [3] = "1.25"
+}
+
+game:GetService("ReplicatedStorage").Events.CrashAction:FireServer(unpack(args))
+end
+  	end    
+})
